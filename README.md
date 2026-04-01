@@ -1,38 +1,111 @@
-# Credit Card Fraud Detection Analysis
+# 💳 Credit Card Fraud Detection System
 
-## Project Overview
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-This project analyses credit card transaction data to identify fraudulent activity and builds a machine learning model to detect fraud.
+---
 
-## Dataset
+## 📌 Overview
+This project explores and models **credit card fraud detection** using real-world transactional data. It combines **exploratory data analysis (EDA)**, **data visualisation**, and **machine learning** to identify patterns associated with fraudulent behaviour.
 
-* 280,000+ transactions
-* Highly imbalanced dataset (fraud < 1%)
+The dataset is highly imbalanced, making this a **realistic and challenging classification problem**.
 
-## Key Analysis
+---
 
-* Fraud vs non-fraud distribution
-* Transaction amount analysis
-* Correlation heatmap
+## 📊 Dataset Description
+- **Total Transactions:** 284,807  
+- **Fraudulent Transactions:** 492 (~0.17%)  
+- **Features:**  
+  - `Time`  
+  - `Amount`  
+  - `V1–V28` (PCA-transformed features)  
+  - `Class` (0 = Normal, 1 = Fraud)
 
-## Machine Learning
+---
 
-* Logistic Regression model
-* Model evaluation using confusion matrix and classification report
+## 🔍 Exploratory Data Analysis
 
-## Key Insights
+### ✔ Fraud Distribution
+- Severe class imbalance detected  
+- Fraud accounts for **less than 1%** of transactions  
 
-* Fraud transactions are rare but show distinct patterns
-* Imbalanced data presents challenges for detection
-* Certain features correlate with fraud behaviour
+### ✔ Transaction Amount Analysis
+- Fraudulent transactions show a **higher average amount**  
+- Suggests unusual spending behaviour is a strong indicator  
 
-## Tools Used
+### ✔ Correlation Analysis
+- Correlation heatmap reveals relationships between features  
+- Certain features exhibit patterns useful for classification  
 
-* Python
-* Pandas
-* Matplotlib
-* Seaborn
-* Scikit-learn
+---
+
+## 📈 Visualisations Included
+- 📊 Fraud vs Non-Fraud Count Plot  
+- 📊 Percentage Distribution Chart  
+- 📊 Average Transaction Amount Comparison  
+- 🔥 Correlation Heatmap  
+- 🔥 Confusion Matrix Heatmap  
+
+---
+
+## 🤖 Machine Learning Pipeline
+
+### 🔧 Steps:
+1. Data loading and preprocessing  
+2. Feature exploration  
+3. Train-test split  
+4. Model training  
+5. Prediction generation  
+6. Model evaluation  
+
+### 🧠 Model Used:
+- Logistic Regression *(update if you used another model)*
+
+---
+
+## 📊 Model Evaluation
+
+Due to class imbalance, multiple evaluation metrics were used:
+
+- **Accuracy**
+- **Precision**
+- **Recall**
+- **F1-score**
+
+### 🔑 Key Insight:
+> Accuracy is misleading in imbalanced datasets — **recall is critical** for fraud detection to minimise missed fraud cases.
+
+---
+
+## 🔥 Confusion Matrix
+
+The confusion matrix heatmap highlights:
+- True Positives (Fraud correctly detected)
+- False Negatives (Missed fraud ⚠️)
+- False Positives
+- True Negatives
+
+---
+
+## ⚙️ Technologies Used
+
+| Tool | Purpose |
+|-----|--------|
+| Python | Core programming |
+| Pandas | Data manipulation |
+| NumPy | Numerical operations |
+| Matplotlib | Basic visualisation |
+| Seaborn | Advanced visualisation |
+| Scikit-learn | Machine learning |
+
+---
+
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/Silverdon25/credit-card-fraud-detection.git
 
 ## Author
 
