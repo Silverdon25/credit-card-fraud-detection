@@ -105,7 +105,7 @@ The confusion matrix heatmap highlights:
 
 ### 1️⃣ Clone the repository
 ```bash
-git clone https://github.com/Silverdon25/credit-card-fraud-detection.git
+git clone https://github.com/devonwildman/credit-card-fraud-detection.git
 
 ## Author
 
